@@ -62,18 +62,21 @@ const EditFilme = ({ filme }) => {
             </div>
 
             <div class="modal-body">
+              <label>Nome do Filme</label>
               <input
                 type="text"
                 className="form-control"
                 value={nome}
                 onChange={e => setNome(e.target.value)}
               />
+              <label>Classificação Indicativa</label>
               <input
                 type="number"
                 className="form-control"
                 value={class_indicativa}
                 onChange={e => setClassificao(e.target.value)}
               />
+              <label>Duração</label>
               <input
                 type="number"
                 className="form-control"
